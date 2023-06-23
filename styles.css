@@ -1,0 +1,64 @@
+ body {
+      font-family: 'Sono', sans-serif;
+      background-image: url(assets/sarathkumar.jpg);
+      background-repeat: repeat;
+      background-size: 20%;
+      
+    }
+
+    .pricing-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 2rem;
+    }
+
+    .pricing-plan{
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: lightgray;
+      text-align: center;
+    }
+
+    .plan-title{
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .plan-price{
+      font-weight: bold;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .plan-features{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .plan-features li {
+      margin-bottom: 20px;
+    }
+
+    .plan-button {
+      padding: 20px;
+      background-color: lightblue;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+    }
+
+
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1250px) {
+      .pricing-container{
+        flex-direction: column;
+        height: 100%;
+      }
+      
+    }
